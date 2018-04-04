@@ -11,9 +11,9 @@ class MyRoute extends Component {
 		return (
 			<HashRouter history={history}>
 				<div>
-					<Route exact path='/' component={All} />
-					<Route path='/detail' component={Detail} />
-					<Route path='/list' component={List} />
+					<Route exact path="/" component={All} />
+					<Route path="/detail" component={Detail} />
+					<Route path="/list" component={List} />
 				</div>
 			</HashRouter>
 		);

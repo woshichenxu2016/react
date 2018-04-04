@@ -8,6 +8,6 @@ class Detail extends Component {
 			</div>
 		);
 	}
-};
+}
 
 module.exports = Detail;

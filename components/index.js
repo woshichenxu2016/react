@@ -1,7 +1,13 @@
 import React, {Component} from 'react';
 import {render} from 'react-dom';
-import Routes from 'components/routes'
-import style from './index.less'
+import loadable from 'react-loadable';
+import Routes from 'components/routes';
+import {createStore} from 'redux';
+import style from './index.less';
 
-render(<Routes />, document.querySelector('#app'));
+const AsyncAll = loadable({
+  loader: () => import('components/all'),
+  loading: null
+});
 
+render(<AsyncAll />, document.querySelector('#app'));

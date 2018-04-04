@@ -1,0 +1,11 @@
+.card {
+  width: 20px;
+  height: 20px;
+}
+.index {
+  padding: 0;
+  margin: 0;
+}
+.index-content {
+  font-size: 30px;
+}
